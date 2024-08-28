@@ -106,9 +106,9 @@ void setup() {
   }
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("ANTI-THEFT AND");
+  lcd.print("SMART ANTI-THEFT AND");
   lcd.setCursor(0, 1);
-  lcd.print("TRACKING SYSTEM");
+  lcd.print("TRACKING SYSTEM USING KEYPAD");
   delay(3000);
   lcd.clear();
   Serial.println("ending");
@@ -119,7 +119,7 @@ void setup() {
   lcd.print("ENTER YOUR");
   lcd.setCursor(0, 1);
   lcd.print("PASSWORD");
-  delay(3000);
+  delay(5000);
   lcd.clear();
 }
 
