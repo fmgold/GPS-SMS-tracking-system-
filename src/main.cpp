@@ -106,10 +106,10 @@ void setup() {
   }
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("SMART ANTI-THEFT AND");
+  lcd.print("SMART ANTI-THEFT WITH");
   lcd.setCursor(0, 1);
-  lcd.print("TRACKING SYSTEM USING KEYPAD");
-  delay(3000);
+  lcd.print("2FA AUTHENTICATION");
+  delay(2000);
   lcd.clear();
   Serial.println("ending");
 
@@ -118,7 +118,7 @@ void setup() {
   lcd.setCursor(0, 0);
   lcd.print("ENTER YOUR");
   lcd.setCursor(0, 1);
-  lcd.print("PASSWORD");
+  lcd.print("PASSCODE ");
   delay(5000);
   lcd.clear();
 }
@@ -155,9 +155,9 @@ void getPassword() {
         Serial.println("Password is correct!");
         lcd.clear();
         lcd.setCursor(0, 0);
-        lcd.print("PASSWORD");
+        lcd.print("PASSCODE");
         lcd.setCursor(0, 1);
-        lcd.print("IS CORRECT");
+        lcd.print("IS RIGHT");
         delay(1000);
         passwordCorrect = true;
         Serial.println("Password correct. Listening for SMS commands...");
@@ -210,7 +210,7 @@ void sendLocation() {
   Serial.println("Reading GPS...");
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Reading GPS...");
+  lcd.print("Reading GPS LOCATION..");
 
   // Wait for GPS data to be available
   unsigned long start = millis();
