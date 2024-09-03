@@ -192,17 +192,17 @@ void checkForSMS() {
       Serial.println("location sent");
     }
 
-    //    if (sms.indexOf("ON") >= 0) {
-    //      // Turn on the relay
-    //      digitalWrite(relayPin, HIGH);
-    //      sendSMS("+2348144836070", "Relay is ON");
-    //    }
-    //
-    //    if (sms.indexOf("OFF") >= 0) {
-    //      // Turn off the relay
-    //      digitalWrite(relayPin, LOW);
-    //      sendSMS("+2348144836070", "Relay is OFF");
-    //    }
+       if (sms.indexOf("ON") >= 0) {
+         // Turn on the relay
+        // digitalWrite(relayPin, HIGH);
+         sendSMS("+2348144836070", "Relay is ON");
+       }
+    
+       if (sms.indexOf("OFF") >= 0) {
+         // Turn off the relay
+         // digitalWrite(relayPin, LOW);
+         sendSMS("+2348144836070", "Relay is OFF");
+       }
   }
 }
 
